@@ -203,12 +203,12 @@ p {
 
 /* Footer */
 
-footer {
+footer>ul {
+    display: flex;
+    /* vertical-align: top; */
+    justify-content: center;
     background-color: black;
-    display: grid;
-    grid-template-columns: auto;
-    padding: 25px;
-    flex-direction: column;
+    padding: 10px;
 }
 
 
@@ -216,7 +216,7 @@ footer {
 
 @media only screen and (max-width: 600) {
     .flexContainer {
-        display: flex;
+        display: inline-flex;
         flex-direction: column;
         width: 100%;
         margin: 20px;
